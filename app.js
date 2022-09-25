@@ -7,6 +7,7 @@ const { localsName } = require('ejs');
 const mongoose = require('mongoose');
 
 const Product = require('./models/product');
+const path = require('path');
 
 
 
@@ -45,6 +46,7 @@ app.get('/home', (req, res) => {
 
 app.get('/newProduct', (req, res) => {
     res.render('newProduct')
+    
 })
 
 app.post('/products', async (req, res) => {
@@ -52,6 +54,11 @@ app.post('/products', async (req, res) => {
     const product = new Product(req.body.product);
     await product.save();
     res.redirect('/')
+})
+
+app.get('/products', async (req, res) => {
+    products = await Product.find({});
+    res.render('products', { products });
 })
 
 

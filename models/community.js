@@ -3,8 +3,7 @@ const Schema = mongoose.Schema;
 
 const productCommunity = new Schema({
     name: String,
-    members: Number,
-    location: String 
+    members: Number 
 })
 
-module.exports = new mongoose.model('Community', productSchema);
+module.exports = new mongoose.model('Community', productCommunity);

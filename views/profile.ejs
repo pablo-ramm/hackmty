@@ -1,0 +1,308 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    <section style="background-color: #5d727f;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col">
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light rounded-3 p-3 mb-4">
+                        <!-- Container wrapper -->
+                        <div class="container-fluid">
+                            <!-- Toggle button -->
+                            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                    
+                            <!-- Collapsible wrapper -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <!-- Navbar brand -->
+                                <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                                    <img src="images/aflogo.jpg" height="30" alt="AFlogo"  />
+                                </a>
+                                <!-- Left links -->
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/">Categories</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/aboutus">About us</a>
+                                    </li>
+                                </ul>
+                                <!-- Left links -->
+                            </div>
+                            <!-- Collapsible wrapper -->
+                    
+                            <!-- Right elements -->
+                            <div class="d-flex align-items-center">
+
+                                
+                                <!-- Notifications -->
+                                <div class="dropdown">
+                                    <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-bell"></i>
+                                        <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Inbox</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Donations</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Goals</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Avatar -->
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar"
+                                        role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CrQ5KRs8mShTJqs5_vPbWPMAi5vwlekDDMpoFxqNZmzZpcMH-c_oG2WXKFylwpiymDM&usqp=CAU" class="rounded-circle" height="30"
+                                            alt="Black and White Portrait of a Man" loading="lazy" />
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                                        <li>
+                                            <a class="dropdown-item" href="/profile">My profile</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="/settings">Settings</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Right elements -->
+                        </div>
+                        <!-- Container wrapper -->
+                    </nav>
+                    <!-- Navbar -->
+                    
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CrQ5KRs8mShTJqs5_vPbWPMAi5vwlekDDMpoFxqNZmzZpcMH-c_oG2WXKFylwpiymDM&usqp=CAU"
+                                alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                            <h5 class="my-3">IEPAM</h5>
+                            <p class="text-muted mb-1">Instituto Estatal de las Personas Adultas Mayores</p>
+                            <p class="text-muted mb-4">Monterrey, Nuevo León, MX</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <button type="button" class="btn btn-success" data-mdb-toggle="modal" data-mdb-target="#exampleModal" data-mdb0whatever="@getbootstrap">Donate</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Donation</h5>
+                                                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Name:</label>
+                                                        <input type="text" class="form-control" id="recipient-name" />
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="message-text" class="col-form-label">Message:</label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Send Donation</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-outline-success ms-1">Message</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 mb-lg-0">
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush rounded-3">
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fas fa-globe fa-lg text-warning"></i>
+                                    <p class="mb-0">https://www.nl.gob.mx/iepam</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                                    <p class="mb-0">@iepam1</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                                    <p class="mb-0">iepam.nl</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                    <p class="mb-0">IEPAM</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Organization</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">Instituto Estatal de las Personas Adultas Mayores</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Email</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">https://www.nl.gob.mx/iepam</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Phone</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">81 2723 0979</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Mobile</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">81 2723 0979</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Description</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">Organismo público descentralizado encargado de ejercer las políticas públicas encaminadas a procurar el desarrollo
+                                    integral de las personas adultas mayores en el Estado de Nuevo de León.</p>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Address</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">Monterrey, Nuevo León, MX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4 mb-md-0">
+                                <div class="card-body">
+                                    <p class="mb-4"> Clothing Project Status
+                                    </p>
+                                    <p class="mb-1" style="font-size: .77rem;">Shirts</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;background-color: #41BC30" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Underwear</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 45%;background-color: #41BC30 " aria-valuenow="45"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Quilts</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 89%;background-color: #41BC30" aria-valuenow="89"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Shoes</p>
+                                    <div class="progress rounded" style="height: 5px;background-color: #41BC30">
+                                        <div class="progress-bar" role="progressbar" style="width: 55%;background-color: #41BC30" aria-valuenow="55"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Glasses</p>
+                                    <div class="progress rounded mb-2" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 66%;background-color: #41BC30" aria-valuenow="66"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4 mb-md-0">
+                                <div class="card-body">
+                                    <p class="mb-4"> Education Project
+                                        Status
+                                    </p>
+                                    <p class="mb-1" style="font-size: .77rem;">Scholarships</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;background-color: #41BC30" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Utensils</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 72%;background-color: #41BC30" aria-valuenow="72"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Electrodomestics</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 89%;background-color: #41BC30 " aria-valuenow="89"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Pencils</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 55%;background-color: #41BC30" aria-valuenow="55"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Toilet paper</p>
+                                    <div class="progress rounded mb-2" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 66%;background-color: #41BC30" aria-valuenow="66"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
